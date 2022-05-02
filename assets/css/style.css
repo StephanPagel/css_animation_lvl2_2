@@ -1,0 +1,55 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 100px;
+    animation-name: rolling;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rolling {
+    0% {
+        top: 0;
+        left: 0;
+        background: red;
+    }
+
+    25% {
+        top: 0;
+        left: 93%;
+        background: yellow;
+    }
+
+    50% {
+        top: 84%;
+        left: 93%;
+        background: green;
+    }
+
+    75% {
+        top: 84%;
+        left: 0;
+        background: blue;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background: red;
+    }
+
+}
